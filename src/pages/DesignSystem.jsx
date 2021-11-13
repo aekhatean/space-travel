@@ -1,12 +1,19 @@
-import "../App.css";
 import React from "react";
+import "../App.css";
+
+// Import Components
+import LargeButton from "../components/LargeButton";
+import Navbar from "../components/Navbar";
+import Tabs from "../components/Tabs";
+import Dots from "../components/Dots";
+import Numbers from "../components/Numbers";
 
 export default function DesignSystem() {
   return (
     <div className="design-system container">
       <h1 className="ff-serif">Design system</h1>
       <section id="colors">
-        <h2>
+        <h2 className="numbered-title">
           <span>01</span> colors
         </h2>
 
@@ -79,31 +86,31 @@ export default function DesignSystem() {
       </section>
 
       <section id="typography" style={{ margin: "4rem 0" }}>
-        <h2>
+        <h2 className="numbered-title">
           <span>02 </span>Typography
         </h2>
-        <div class="flex">
-          <div style={{ flexBasis: "100%" }}>
+        <div className="flex">
+          <div className="flow" style={{ flexBasis: "100%" }}>
             <div>
-              <p class="txt-light">Heading 1 - Bellefair Regular - 150px</p>
+              <p className="txt-light">Heading 1 - Bellefair Regular - 150px</p>
               <p className="fs-900 ff-serif uppercase">Earth</p>
             </div>
             <div>
-              <p class="txt-light">Heading 2 - Bellefair Regular - 100px</p>
+              <p className="txt-light">Heading 2 - Bellefair Regular - 100px</p>
               <p className="fs-800 ff-serif uppercase">Venus</p>
             </div>
             <div>
-              <p class="txt-light">Heading 3 - Bellefair Regular - 56px</p>
+              <p className="txt-light">Heading 3 - Bellefair Regular - 56px</p>
               <p className="fs-700 ff-serif uppercase">Jupiter & Saturn</p>
             </div>
             <div>
-              <p class="txt-light">Heading 4 - Bellefair Regular - 32px</p>
+              <p className="txt-light">Heading 4 - Bellefair Regular - 32px</p>
               <p className="fs-600 ff-serif uppercase">
                 Uranus, Neptune, & Pluto
               </p>
             </div>
             <div>
-              <p class="txt-light">
+              <p className="txt-light">
                 Heading 5 - Barlow Condensed Regular - 28px - 4.75 Character
                 Space
               </p>
@@ -113,7 +120,7 @@ export default function DesignSystem() {
             </div>
           </div>
 
-          <div style={{ flexBasis: "100%" }}>
+          <div className="flow" style={{ flexBasis: "100%" }}>
             <div>
               <p className="txt-light">
                 Subheading 1 - Bellefair Regular - 28px
@@ -157,6 +164,27 @@ export default function DesignSystem() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Components section */}
+      <section className="flow" id="interactive-elements">
+        <h2 className="numbered-title">
+          <span>03</span> Interactive Elements
+        </h2>
+        <Navbar />
+        <div className="flex">
+          <div style={{ marginTop: "5rem" }}>
+            <LargeButton />
+          </div>
+        </div>
+        <div
+          className="flow"
+          style={{ marginBottom: "50vh", "--flow-space": "4rem" }}
+        >
+          <Tabs />
+          <Dots />
+          <Numbers />
         </div>
       </section>
     </div>
