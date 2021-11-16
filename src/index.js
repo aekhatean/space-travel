@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./App.css";
-import DesignSystem from "./pages/DesignSystem";
+import App from "./App.js";
 
 ReactDOM.render(
   <React.StrictMode>
-    <DesignSystem />
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
