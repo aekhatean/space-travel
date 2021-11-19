@@ -3,7 +3,7 @@ import LargeButon from "../components/LargeButton";
 
 export default function Home() {
   return (
-    <div className="homepage grid-container grid-container--home">
+    <main className="homepage grid-container grid-container--home">
       <div>
         <h1 className="ff-sans-cond fs-500 txt-light uppercase letter-spacing-1">
           So, you want to travel to{" "}
@@ -19,6 +19,6 @@ export default function Home() {
       <div>
         <LargeButon name="Explore" />
       </div>
-    </div>
+    </main>
   );
 }

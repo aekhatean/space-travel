@@ -52,7 +52,7 @@ export default function Navbar() {
               className="ff-sans-cond uppercase letter-spacing-2 txt-white"
               href="/"
             >
-              <span>00</span>
+              <span aria-hidden="true">00</span>
               Home
             </a>
           </li>
@@ -61,7 +61,7 @@ export default function Navbar() {
               className="ff-sans-cond uppercase letter-spacing-2 txt-white"
               href="/"
             >
-              <span>01</span>
+              <span aria-hidden="true">01</span>
               Destination
             </a>
           </li>
@@ -70,7 +70,7 @@ export default function Navbar() {
               className="ff-sans-cond uppercase letter-spacing-2 txt-white"
               href="/"
             >
-              <span>02</span>
+              <span aria-hidden="true">02</span>
               Crew
             </a>
           </li>
@@ -79,7 +79,7 @@ export default function Navbar() {
               className="ff-sans-cond uppercase letter-spacing-2 txt-white"
               href="/"
             >
-              <span>03</span>
+              <span aria-hidden="true">03</span>
               Technology
             </a>
           </li>
