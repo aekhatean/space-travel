@@ -559,20 +559,20 @@ body {
   background-position: bottom center;
 }
 
-.homepage {
+.homepage-bg {
   background-image: url("./assets/home/background-home-mobile.jpg");
   background-size: cover;
   background-position: bottom center;
 }
 
 @media (min-width: 35rem) {
-  .homepage {
+  .homepage-bg {
     background-image: url("./assets/home/background-home-tablet.jpg");
   }
 }
 
 @media (min-width: 45rem) {
-  .homepage {
+  .homepage-bg {
     background-image: url("./assets/home/background-home-desktop.jpg");
   }
 }
